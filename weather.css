@@ -1,0 +1,42 @@
+body{
+    background-color: cornflowerblue;
+    color: powderblue;
+    font-family: sans-serif;
+}
+
+/* h1
+{
+    text-align: center;
+    text-shadow:5px 5px 7px black;
+}
+#location
+{
+    width: 50vw;
+    min-height: 25vh;
+    resize: none;
+    border-radius: 2px solid powderblue;
+    border-radius: 10px;
+    padding: 20px;
+}
+.inputfields
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+#btn-submit
+{
+    width:20vw;
+    height: 5vh;
+    border: 2px solid #2196f33b;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+textarea::-webkit-scrollbar
+{
+    display: none;
+} */

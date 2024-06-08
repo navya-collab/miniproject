@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+   <h1 class="weatherz"></h1>
+   <h1 class="weatherz"></h1>
+   <h1 class="weatherz"></h1>
+   <h1 class="weatherz"></h1>
+   <h1 class="weatherz"></h1>
+    <script src="weathernew.js"></script>
+    <script>
+        async function weatherdet(){
+        const data=await fetch("http://localhost:3000/weather");
+        console.log(data.json().then((e)=>{ let weathers=document.querySelectorAll(".weatherz");
+        console.log(e.weather[0]);
+        weathers[0].innerHTML=e.weather[0].description
+        weathers[1].innerHTML="Temparature "+e.main.temp+"K";
+        weathers[2].innerHTML="Humidity "+e.main.humidity;
+        weathers[3].innerHTML="Pressure "+e.main.pressure;
+        weathers[4].innerHTML="WindSpeed "+e.wind.speed;
+        }));}
+        weatherdet();
+    </script>
+</body>
+</html>
